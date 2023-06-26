@@ -1,0 +1,248 @@
+.main_top {
+  background: url('../img/main_top/main_top_bg.png') bottom / cover no-repeat;
+
+  .container {
+    max-width: 1600px;
+  }
+}
+.main_top__content {
+  padding: 178px 0 105px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media ($tablet) {
+    padding: 130px 0 80px;
+  }
+  @media ($tablet3) {
+    padding: 110px 0 40px;
+  }
+}
+.main_top__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_top__logo_img {
+  width: 135px;
+
+  @media ($tablet) {
+    width: 115px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.main_top__logo_text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: rgba(255, 255, 255, 0.8);
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+  }
+}
+.main_top__title {
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 141px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  @media ($desktopBig) {
+    font-size: 80px;
+    line-height: 95px;
+  }
+  @media ($tablet) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  @media ($tablet3) {
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 5px;
+  }
+}
+.main_top__subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: rgba(255, 255, 255, 0.8);
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+  }
+}
+.main_top__items {
+  margin-top: 40px;
+  display: flex;
+  margin-left: -80px;
+
+  @media ($tablet) {
+    margin-top: 20px;
+    margin-left: -40px;
+  }
+  @media ($tablet3) {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: -20px;
+  }
+}
+.main_top__item {
+  margin-left: 80px;
+  width: calc(33.333% - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ($tablet) {
+    margin-left: 40px;
+    width: calc(33.333% - 40px);
+  }
+  @media ($tablet3) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+.main_top__item_img {
+  width: 50px;
+
+  @media ($tablet) {
+    width: 40px;
+  }
+  @media ($tablet3) {
+    width: 30px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.main_top__item_text {
+  margin-top: 15px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+
+  @media ($desktopBig) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media ($tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+  }
+}
+.main_top__links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media ($tablet) {
+    margin-top: 20px;
+  }
+  @media ($tablet3) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: -10px;
+  }
+}
+.main_top__link {
+  margin: 0 10px;
+  width: 360px;
+  text-align: center;
+
+  @media ($tablet3) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 10px;
+    width: 280px;
+  }
+}
+.main_top__langs_wr {
+  margin: 40px auto 0;
+  max-width: 720px;
+
+  @media ($tablet) {
+    margin: 20px auto 0;
+  }
+}
+.main_top__langs {
+  display: flex;
+  margin-left: -40px;
+
+  @media ($tablet3) {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -15px;
+  }
+}
+.main_top__lang {
+  margin-left: 40px;
+  width: calc(33.333% - 40px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media ($tablet3) {
+    margin-left: 0;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
+.main_top__lang_text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+.main_top__lang_img {
+  margin-top: 10px;
+  width: 38px;
+
+  @media ($tablet3) {
+    margin-top: 0;
+    width: 28px;
+    margin-left: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

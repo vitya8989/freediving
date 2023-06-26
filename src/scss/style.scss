@@ -1,0 +1,68 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+	background: #ffffff;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	&.this--overflow {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@media ($tablet) {
+		padding: 0 15px;
+	}
+}
+main {
+	flex: 1 0 auto;
+}
+
+@import "blocks/title";
+@import "blocks/btn";
+@import "blocks/vertical_card";
+@import "blocks/horizontal_card";
+
+
+@import "../components/header/header";
+@import "../components/footer/footer";
+
+@import "../components/main/main_top/main_top";
+@import "../components/main/about/about";
+@import "../components/main/beginners/beginners";
+@import "../components/main/courses/courses";
+@import "../components/main/other/other";
+@import "../components/main/why/why";
+@import "../components/main/instructors/instructors";
+@import "../components/main/choose/choose";
+@import "../components/main/reviews/reviews";
+@import "../components/main/how/how";
+
+@import "../components/callback/callback";
+@import "../components/video_popup/video_popup";

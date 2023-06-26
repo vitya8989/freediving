@@ -1,0 +1,30 @@
+.courses {
+  background: url('../img/courses/bg.png') center / 100% 100% no-repeat;
+  padding: 100px 0 150px;
+
+  @media ($tablet) {
+    padding: 60px 0 100px;
+    background: url('../img/courses/bg.png') 30% bottom / cover no-repeat;
+  }
+  @media ($tablet3) {
+    padding: 40px 0;
+  }
+}
+.courses__cards {
+  margin-top: 40px;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}
+.courses__card {
+  margin-bottom: 60px;
+
+  @media ($tablet3) {
+    margin-bottom: 40px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,48 @@
+.btn {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding: 22px 20px 18px;
+  border-radius: 50px;
+  transition: background 0.25s, color 0.25s;
+
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 15px 14px;
+  }
+
+  &.this--prime {
+    background: #FF8A00;
+    color: #ffffff;
+
+    &.this--gray {
+      background: #798EA2;
+    }
+    &:hover {
+      @media #{$mouse-device} {
+        background: #023768;
+      }
+    }
+    &:active {
+      background: #002649!important;
+    }
+  }
+  &.this--second {
+    background: #FFFFFF;
+    color: #393939;
+
+    &:hover {
+      @media #{$mouse-device} {
+        background: #023768;
+        color: #FFFFFF;
+      }
+    }
+    &:active {
+      background: #002649!important;
+      color: #FFFFFF;
+    }
+  }
+}

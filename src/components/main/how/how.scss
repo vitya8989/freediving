@@ -1,0 +1,68 @@
+.how {
+  padding: 100px 0;
+
+  @media ($tablet) {
+    padding: 60px 0;
+  }
+  @media ($tablet3) {
+    padding: 40px 0;
+  }
+}
+.how__body {
+  margin: 60px auto 0;
+  max-width: 800px;
+
+  @media ($tablet) {
+    margin: 40px auto 0;
+  }
+  @media ($tablet3) {
+    margin: 20px auto 0;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #798EA1;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+
+    @media ($tablet3) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  h4 {
+    color: #023768;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @media ($tablet3) {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+  a {
+    color: #023768;
+    transition: color 0.25s;
+
+    &:hover {
+      @media #{$mouse-device} {
+        color: #FF8A00;
+      }
+    }
+  }
+}
+.how__link {
+  margin: 30px auto 0;
+  display: block;
+  width: 360px;
+  text-align: center;
+
+  @media ($tablet3) {
+    margin: 20px auto 0;
+    width: 280px;
+  }
+}

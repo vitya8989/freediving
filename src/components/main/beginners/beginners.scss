@@ -1,0 +1,35 @@
+.beginners {
+  padding: 100px 0;
+
+  @media ($tablet) {
+    padding: 60px 0;
+  }
+  @media ($tablet3) {
+    padding: 40px 0;
+  }
+}
+.beginners__cards {
+  margin-top: 40px;
+  display: flex;
+  margin-left: -60px;
+
+  @media ($tablet) {
+    display: block;
+    margin-left: 0;
+    margin-bottom: -40px;
+  }
+
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}
+.beginners__card {
+  margin-left: 60px;
+  width: calc(50% - 60px);
+
+  @media ($tablet) {
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
