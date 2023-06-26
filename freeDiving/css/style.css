@@ -997,7 +997,8 @@ main {
 
 .main_top__langs_wr {
   margin: 40px auto 0;
-  max-width: 720px;
+  max-width: 760px;
+  width: 100%;
 }
 
 .main_top__langs {
