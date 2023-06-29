@@ -1,38 +1,18 @@
-<?
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+<?php
+header("Content-Type: text/html; charset=utf-8");
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+$name = empty($_POST['name']) ? '' : $_POST['name'];
+$phone = empty($_POST['tel']) ? '' : $_POST['tel'];
+$comment = empty($_POST['question']) ? '' : $_POST['question'];
 
-$mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->setLanguage('ru', 'phpmailer/language/');
-$mail->IsHTML(true);
+if (!empty($_POST['question']) && !empty($_POST['name'])) {
+	$fileContent = "Телефон для связи = ". $phone . ", имя = " . $name . ", вопрос клиента = " . $comment;
+} else if (!empty($_POST['name'])) {
+	$fileContent = "Телефон для связи = ". $phone . ", имя = " . $name;
+} else {
+	$fileContent = "Телефон для связи = ".$phone;
+}
 
-$mail->setFrom('kayakingfuerteventura@gmail.com');
-$mail->addAddress('vitya898989@gmail.com');
-$name = !empty($_POST['name']) ? $_POST['name'] : 'Клиент не указал имя';
-$question = !empty($_POST['question']) ? $_POST['question'] : 'Клиент не задал вопрос';
-$mail->Subject = 'Вопрос с лендинга free diving';
-        $body = '<html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
-						  		<p>Имя: '.$name.'</p>			
-								<p>Телефон: '.$_POST['tel'].'</p>
-								<p>Вопрос: '.$question.'</p>
-                    </body>
-                </html>';
-        $mail->Body = $body;
-	if (!$mail->send()) {
-		$message = 'Ошибка';
-	} else {
-		$message = 'Данные отправлены';
-	}
-	$response = ['message' => $message];
+mail("vitya898989@gmail.com", "Вопрос с лендинга free diving", $fileContent, "From: kayakingfuerteventura@gmail.com");
 
-	header('Content-type: application/json');
-	echo json_encode($response);
 ?>
