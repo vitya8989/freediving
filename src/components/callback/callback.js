@@ -34,38 +34,37 @@ if (openPopupBtns.length > 0) {
 
     const callbackForm = callbackPopup.querySelector('.callback__form');
     const inputTel = callbackForm.querySelector('.js_input_tel');
-    const agree = document.getElementById('agree');
 
     $('.js_input_tel').inputmask('+9999999999[9]');
 
-    callbackForm.addEventListener('submit', (e) => {
+    callbackForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         let valid = true;
         if (inputTel.value.indexOf('_') !== -1 || inputTel.value === '') {
             inputTel.classList.add('error');
             valid = false;
         }
-        if (!agree.checked) {
-            agree.classList.add('error');
-            valid = false;
-        }
         if (valid) {
-            callbackForm.reset();
-            callbackContents.forEach((content) => {
-                if (content.dataset.content === 'thanks') {
-                    content.classList.add('active');
-                } else {
-                    content.classList.remove('active');
-                }
+            let response = await fetch('form-action.php', {
+                method: 'POST',
+                body: new FormData(callbackForm)
             });
+            if (response.ok) {
+                callbackForm.reset();
+                callbackContents.forEach((content) => {
+                    if (content.dataset.content === 'thanks') {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+            } else {
+                alert('Произошла ошибка отправки, попробуйте еще раз!');
+            }
         }
     });
 
     inputTel.addEventListener('focus', () => {
         inputTel.classList.remove('error');
     });
-    agree.addEventListener('change', () => {
-        agree.classList.remove('error');
-    });
-
 }

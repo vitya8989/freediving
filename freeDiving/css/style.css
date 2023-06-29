@@ -277,6 +277,14 @@ main {
   color: #798EA2;
 }
 
+.vertical_card__benefit {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FF8A00;
+  margin-top: 10px;
+}
+
 .vertical_card__bottom {
   margin-top: 10px;
 }
@@ -1082,6 +1090,7 @@ main {
 
 .about__text .yellow {
   color: #FF8A00;
+  font-size: 26px;
 }
 
 .about__text .bold {
@@ -1904,7 +1913,8 @@ main {
   margin-top: 0;
 }
 
-.callback__input input {
+.callback__input input,
+.callback__input textarea {
   border-radius: 50px;
   background: #ECF3F6;
   width: 100%;
@@ -1922,80 +1932,62 @@ main {
   transition: border 0.25s, box-shadow 0.25s, -webkit-box-shadow 0.25s;
 }
 
-.callback__input input::-webkit-input-placeholder {
+.callback__input input::-webkit-input-placeholder, .callback__input textarea::-webkit-input-placeholder {
   color: #798EA1;
 }
 
-.callback__input input::-moz-placeholder {
+.callback__input input::-moz-placeholder, .callback__input textarea::-moz-placeholder {
   color: #798EA1;
 }
 
-.callback__input input:-ms-input-placeholder {
+.callback__input input:-ms-input-placeholder, .callback__input textarea:-ms-input-placeholder {
   color: #798EA1;
 }
 
-.callback__input input::-ms-input-placeholder {
+.callback__input input::-ms-input-placeholder, .callback__input textarea::-ms-input-placeholder {
   color: #798EA1;
 }
 
-.callback__input input::placeholder {
+.callback__input input::placeholder,
+.callback__input textarea::placeholder {
   color: #798EA1;
 }
 
-.callback__input input:focus {
+.callback__input input:focus,
+.callback__input textarea:focus {
   border: 1px solid #798EA1;
 }
 
-.callback__input input.error {
+.callback__input input.error,
+.callback__input textarea.error {
   border: 1px solid red;
   -webkit-box-shadow: 0 0 5px 1px red;
           box-shadow: 0 0 5px 1px red;
 }
 
-.callback__agree {
-  margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 16px;
+.callback__input textarea {
+  resize: none;
+  border-radius: 40px;
+  height: 165px;
 }
 
-.callback__agree input {
-  margin-right: 10px;
-  cursor: pointer;
-  height: 18px;
-  width: 18px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  margin-top: 2px;
-  position: relative;
+.callback__input textarea::-webkit-scrollbar {
+  width: 8px;
 }
 
-.callback__agree input.error::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border-radius: 1px;
-  border: 1px solid red;
-  -webkit-box-shadow: 0 0 5px 1px red;
-          box-shadow: 0 0 5px 1px red;
+.callback__input textarea::-webkit-scrollbar-track {
+  background: #e4e4e2;
+  border-radius: 2px;
 }
 
-.callback__agree label {
-  cursor: pointer;
-  color: #798EA1;
+.callback__input textarea::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 2px;
 }
 
 .callback__submit {
   display: block;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 100%;
   cursor: pointer;
 }
@@ -2178,6 +2170,10 @@ main {
   .main_top__item_text {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .about__text .yellow {
+    font-size: 20px;
   }
 
   .about__text {
@@ -2913,6 +2909,12 @@ main {
     line-height: 22px;
   }
 
+  .vertical_card__benefit {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+
   .vertical_card__items {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3262,6 +3264,10 @@ main {
     padding-top: 40px;
   }
 
+  .about__text .yellow {
+    font-size: 18px;
+  }
+
   .about__text {
     font-size: 14px;
     line-height: 22px;
@@ -3491,18 +3497,18 @@ main {
     margin-top: 10px;
   }
 
-  .callback__input input {
+  .callback__input input,
+  .callback__input textarea {
     font-size: 15px;
     line-height: 22px;
   }
 
-  .callback__agree {
-    margin-top: 10px;
-    font-size: 14px;
+  .callback__input textarea::-webkit-scrollbar {
+    width: 0;
   }
 
   .callback__submit {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .callback__text {

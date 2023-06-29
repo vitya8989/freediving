@@ -86,6 +86,19 @@
     line-height: 22px;
   }
 }
+.vertical_card__benefit {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FF8A00;
+  margin-top: 10px;
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
 .vertical_card__bottom {
   margin-top: 10px;
 }
