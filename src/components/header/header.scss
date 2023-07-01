@@ -16,14 +16,7 @@
   }
 }
 .header__content {
-  padding: 25px 0;
-
-  @media ($desktopBig) {
-    padding: 15px 0;
-  }
-  @media ($tablet) {
-    padding: 10px 0;
-  }
+  padding: 10px 0 12px;
 }
 .header__top {
   display: flex;
@@ -33,7 +26,7 @@
     justify-content: space-between;
   }
   @media ($tablet3) {
-    align-items: flex-start;
+
   }
 }
 .header__top_left {
@@ -53,8 +46,8 @@
 }
 .header__logo {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 26px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-right: 20px;
@@ -72,6 +65,7 @@
     padding: 5px 0;
   }
   @media ($mobileMiddle) {
+    padding: 0;
     br {
      display: inline;
     }
@@ -115,12 +109,17 @@
     flex: 0 1 auto;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 220px;
+    //width: 220px;
     margin-left: 20px;
+    flex-direction: row-reverse;
   }
   @media ($tablet3) {
-    width: 166px;
+    //width: 166px;
     margin-left: 9px;
+  }
+  @media ($mobile) {
+    width: 166px;
+    flex-direction: row;
   }
 }
 .header__langs {
@@ -289,11 +288,15 @@
     align-items: flex-start;
   }
   @media ($tablet) {
+    //width: 100%;
+    //margin-top: 6px;
+  }
+  @media ($mobile) {
     width: 100%;
     margin-top: 6px;
   }
   @media ($mobileMiddle) {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 }
 .header__wa {
@@ -350,14 +353,11 @@
   }
 }
 .header__nav {
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @media ($desktopBig) {
-    margin-top: 15px;
-  }
   @media ($tablet) {
     position: fixed;
     top: 0;
@@ -437,7 +437,8 @@
   }
 }
 .header__book.btn {
-  padding: 16px 30px 14px;
+  padding: 12px 30px 10px;
+  font-size: 18px;
 
   @media (max-width: 1360px) {
     font-size: 14px;

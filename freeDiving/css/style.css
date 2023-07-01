@@ -577,7 +577,7 @@ main {
 }
 
 .header__content {
-  padding: 25px 0;
+  padding: 10px 0 12px;
 }
 
 .header__top {
@@ -601,8 +601,8 @@ main {
 
 .header__logo {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 26px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-right: 20px;
@@ -715,7 +715,7 @@ main {
 }
 
 .header__nav {
-  margin-top: 20px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,7 +759,8 @@ main {
 }
 
 .header__book.btn {
-  padding: 16px 30px 14px;
+  padding: 12px 30px 10px;
+  font-size: 18px;
 }
 
 .footer {
@@ -1147,6 +1148,8 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -2113,10 +2116,6 @@ main {
     width: calc(50% - 40px);
   }
 
-  .header__content {
-    padding: 15px 0;
-  }
-
   .header__top_left {
     display: block;
   }
@@ -2156,10 +2155,6 @@ main {
   .header__contacts_text {
     padding-left: 45px;
     font-size: 17px;
-  }
-
-  .header__nav {
-    margin-top: 15px;
   }
 
   .main_top__title {
@@ -2461,10 +2456,6 @@ main {
             flex-direction: row;
   }
 
-  .header__content {
-    padding: 10px 0;
-  }
-
   .header__top {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2480,8 +2471,11 @@ main {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 220px;
     margin-left: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 
   .header__langs.this--desktop {
@@ -2608,11 +2602,6 @@ main {
 
   .header__burger span:nth-child(3) {
     bottom: 3px;
-  }
-
-  .header__contacts {
-    width: 100%;
-    margin-top: 6px;
   }
 
   .header__nav {
@@ -3058,12 +3047,6 @@ main {
     line-height: 22px;
   }
 
-  .header__top {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
   .header__top_left {
     margin-right: 0;
   }
@@ -3080,7 +3063,6 @@ main {
   }
 
   .header__top_right {
-    width: 166px;
     margin-left: 9px;
   }
 
@@ -3526,11 +3508,28 @@ main {
   .header__address br {
     display: inline;
   }
+
+  .header__top_right {
+    width: 166px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .header__contacts {
+    width: 100%;
+    margin-top: 6px;
+  }
 }
 
 @media (max-width: 499px) {
   .instructors__card .horizontal_card__img {
     padding-top: 100%;
+  }
+
+  .header__logo {
+    padding: 0;
   }
 
   .header__logo br {
@@ -3542,7 +3541,7 @@ main {
   }
 
   .header__contacts {
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .why__slider_wr {

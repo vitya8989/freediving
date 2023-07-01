@@ -1,10 +1,10 @@
-const langHead = document.querySelector('.js_lang_head');
-const langBody = document.querySelector('.js_lang_body');
-
-langHead.addEventListener('click', () => {
-    langHead.classList.toggle('active');
-    langBody.classList.toggle('open');
-});
+// const langHead = document.querySelector('.js_lang_head');
+// const langBody = document.querySelector('.js_lang_body');
+//
+// langHead.addEventListener('click', () => {
+//     langHead.classList.toggle('active');
+//     langBody.classList.toggle('open');
+// });
 
 document.body.addEventListener('click', (e) => {
    if (!e.target.closest('.js_langs_select')) {
