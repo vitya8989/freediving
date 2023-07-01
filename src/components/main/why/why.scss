@@ -17,6 +17,11 @@
   align-items: center;
   p {
     position: relative;
+    display: inline;
+
+    @media ($tablet3) {
+      font-size: 13px;
+    }
 
     &::before {
       width: 4px;
@@ -25,8 +30,12 @@
       border-radius: 50%;
       content: '';
       position: absolute;
-      top: calc(50% - 2px);
+      top: 11px;
       left: -16px;
+
+      @media ($tablet3) {
+        display: none;
+      }
     }
   }
 }
@@ -137,10 +146,10 @@
     height: 10px;
     background: #798EA2;
     opacity: 1;
-    margin: 0 10px;
+    margin: 0 5px;
 
     @media ($tablet3) {
-      margin: 0 7.5px;
+      margin: 0 3px;
       width: 7px;
       height: 7px;
     }

@@ -1280,6 +1280,7 @@ main {
 
 .why__subtitle p {
   position: relative;
+  display: inline;
 }
 
 .why__subtitle p::before {
@@ -1289,7 +1290,7 @@ main {
   border-radius: 50%;
   content: '';
   position: absolute;
-  top: calc(50% - 2px);
+  top: 11px;
   left: -16px;
 }
 
@@ -1401,7 +1402,7 @@ main {
   height: 10px;
   background: #798EA2;
   opacity: 1;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .why__slider_pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -3316,6 +3317,14 @@ main {
     padding: 40px 0;
   }
 
+  .why__subtitle p {
+    font-size: 13px;
+  }
+
+  .why__subtitle p::before {
+    display: none;
+  }
+
   .why__slider_wr {
     max-width: 300px;
     margin: 30px auto 0;
@@ -3326,7 +3335,7 @@ main {
   }
 
   .why__slider_pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 7.5px;
+    margin: 0 3px;
     width: 7px;
     height: 7px;
   }
