@@ -1120,7 +1120,7 @@ main {
 
 .about__image:first-child .about__image_img,
 .about__image:last-child .about__image_img {
-  padding-top: 44.64%;
+  padding-top: 48.974%;
 }
 
 .about__image:nth-child(2),
@@ -1130,7 +1130,7 @@ main {
 
 .about__image:nth-child(2) .about__image_img,
 .about__image:nth-child(3) .about__image_img {
-  padding-top: 71.43%;
+  padding-top: 78.43%;
 }
 
 .about__image:nth-child(2) .about__image_img img,
@@ -2344,7 +2344,7 @@ main {
 
   .horizontal_card__img {
     height: auto;
-    padding-top: 48.333%;
+    padding-top: 50%;
   }
 
   .instructors__card .horizontal_card__img {
