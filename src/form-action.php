@@ -6,13 +6,13 @@ $phone = empty($_POST['tel']) ? '' : $_POST['tel'];
 $comment = empty($_POST['question']) ? '' : $_POST['question'];
 
 if (!empty($_POST['question']) && !empty($_POST['name'])) {
-	$fileContent = "Телефон для связи = ". $phone . ", имя = " . $name . ", вопрос клиента = " . $comment;
+	$fileContent = "WhatsApp number = ". $phone . ", name = " . $name . ", question = " . $comment;
 } else if (!empty($_POST['name'])) {
-	$fileContent = "Телефон для связи = ". $phone . ", имя = " . $name;
+	$fileContent = "WhatsApp number = ". $phone . ", name = " . $name;
 } else {
-	$fileContent = "Телефон для связи = ".$phone;
+	$fileContent = "WhatsApp number = ".$phone;
 }
 
-mail("vitya898989@gmail.com", "Вопрос с лендинга free diving", $fileContent, "From: kayakingfuerteventura@gmail.com");
+mail("kayakingfuerteventura@gmail.com, kl@hl2b.ru", "Message from Free Diving FV", $fileContent, "From: kayakingfuerteventura@gmail.com");
 
 ?>

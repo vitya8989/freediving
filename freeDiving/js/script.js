@@ -6,12 +6,12 @@
 //     langBody.classList.toggle('open');
 // });
 
-document.body.addEventListener('click', (e) => {
-   if (!e.target.closest('.js_langs_select')) {
-       langHead.classList.remove('active');
-       langBody.classList.remove('open');
-   }
-});
+// document.body.addEventListener('click', (e) => {
+//    if (!e.target.closest('.js_langs_select')) {
+//        langHead.classList.remove('active');
+//        langBody.classList.remove('open');
+//    }
+// });
 
 const headerBurger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header__nav');
