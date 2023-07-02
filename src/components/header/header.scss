@@ -16,7 +16,7 @@
   }
 }
 .header__content {
-  padding: 10px 0 12px;
+  padding: 6px 0 12px;
 }
 .header__top {
   display: flex;
@@ -45,30 +45,20 @@
   }
 }
 .header__logo {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  width: 180px;
   margin-right: 20px;
-
   @media ($desktopBig) {
-    font-size: 22px;
-    line-height: 25px;
-    br {
-      display: none;
-    }
+    width: 150px;
   }
-  @media ($tablet3) {
-    font-size: 20px;
-    line-height: 23px;
-    padding: 5px 0;
+  @media ($tablet) {
+    width: 140px;
   }
-  @media ($mobileMiddle) {
-    padding: 0;
-    br {
-     display: inline;
-    }
+  @media ($mobile) {
+    width: 130px;
+  }
+
+  img {
+    width: 100%;
   }
 }
 .header__address {
@@ -83,7 +73,7 @@
   }
 
   @media ($desktopBig) {
-    margin-top: 7px;
+    margin-top: 2px;
     font-size: 17px;
   }
   @media ($tablet3) {

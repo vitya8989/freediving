@@ -577,7 +577,7 @@ main {
 }
 
 .header__content {
-  padding: 10px 0 12px;
+  padding: 6px 0 12px;
 }
 
 .header__top {
@@ -600,12 +600,12 @@ main {
 }
 
 .header__logo {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  width: 180px;
   margin-right: 20px;
+}
+
+.header__logo img {
+  width: 100%;
 }
 
 .header__address {
@@ -2123,16 +2123,11 @@ main {
   }
 
   .header__logo {
-    font-size: 22px;
-    line-height: 25px;
-  }
-
-  .header__logo br {
-    display: none;
+    width: 150px;
   }
 
   .header__address {
-    margin-top: 7px;
+    margin-top: 2px;
     font-size: 17px;
   }
 
@@ -2462,6 +2457,10 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 140px;
   }
 
   .header__top_right {
@@ -3053,12 +3052,6 @@ main {
     margin-right: 0;
   }
 
-  .header__logo {
-    font-size: 20px;
-    line-height: 23px;
-    padding: 5px 0;
-  }
-
   .header__address {
     font-size: 15px;
     line-height: 22px;
@@ -3515,6 +3508,10 @@ main {
 }
 
 @media (max-width: 639px) {
+  .header__logo {
+    width: 130px;
+  }
+
   .header__address br {
     display: inline;
   }
@@ -3536,14 +3533,6 @@ main {
 @media (max-width: 499px) {
   .instructors__card .horizontal_card__img {
     padding-top: 100%;
-  }
-
-  .header__logo {
-    padding: 0;
-  }
-
-  .header__logo br {
-    display: inline;
   }
 
   .header__address {
