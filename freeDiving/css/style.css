@@ -1299,6 +1299,7 @@ main {
 }
 
 .why__slide_img {
+  display: block;
   padding-top: 67.39%;
   position: relative;
 }
