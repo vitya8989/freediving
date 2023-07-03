@@ -17,7 +17,6 @@
   align-items: center;
   p {
     position: relative;
-    display: inline;
 
     @media ($tablet3) {
       font-size: 13px;
@@ -26,15 +25,16 @@
     &::before {
       width: 4px;
       height: 4px;
+      margin-right: 12px;
       background: #798EA1;
       border-radius: 50%;
       content: '';
-      position: absolute;
-      top: 11px;
-      left: -16px;
+      display: inline-block;
+      margin-bottom: 4px;
 
       @media ($tablet3) {
-        display: none;
+        margin-bottom: 2px;
+        margin-right: 8px;
       }
     }
   }

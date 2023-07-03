@@ -1,17 +1,17 @@
-// const langHead = document.querySelector('.js_lang_head');
-// const langBody = document.querySelector('.js_lang_body');
-//
-// langHead.addEventListener('click', () => {
-//     langHead.classList.toggle('active');
-//     langBody.classList.toggle('open');
-// });
+const langHead = document.querySelector('.js_lang_head');
+const langBody = document.querySelector('.js_lang_body');
 
-// document.body.addEventListener('click', (e) => {
-//    if (!e.target.closest('.js_langs_select')) {
-//        langHead.classList.remove('active');
-//        langBody.classList.remove('open');
-//    }
-// });
+langHead.addEventListener('click', () => {
+    langHead.classList.toggle('active');
+    langBody.classList.toggle('open');
+});
+
+document.body.addEventListener('click', (e) => {
+   if (!e.target.closest('.js_langs_select')) {
+       langHead.classList.remove('active');
+       langBody.classList.remove('open');
+   }
+});
 
 const headerBurger = document.querySelector('.header__burger');
 const headerNav = document.querySelector('.header__nav');

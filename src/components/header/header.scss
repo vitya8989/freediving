@@ -17,22 +17,27 @@
 }
 .header__content {
   padding: 6px 0 12px;
+
+  @media (max-width: 1160px) {
+    padding: 6px 0 8px;
+  }
 }
 .header__top {
   display: flex;
   align-items: center;
 
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     justify-content: space-between;
-  }
-  @media ($tablet3) {
-
   }
 }
 .header__top_left {
   display: flex;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 60px;
+
+  @media (max-width: 1560px) {
+    margin-right: 35px;
+  }
 
   @media ($desktopBig) {
     display: block;
@@ -50,7 +55,7 @@
   @media ($desktopBig) {
     width: 150px;
   }
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     width: 140px;
   }
   @media ($mobile) {
@@ -95,21 +100,16 @@
   justify-content: space-between;
   flex: 1 1 auto;
 
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     flex: 0 1 auto;
     flex-wrap: wrap;
     justify-content: flex-end;
-    //width: 220px;
+    width: 220px;
     margin-left: 20px;
-    flex-direction: row-reverse;
   }
   @media ($tablet3) {
-    //width: 166px;
-    margin-left: 9px;
-  }
-  @media ($mobile) {
     width: 166px;
-    flex-direction: row;
+    margin-left: 9px;
   }
 }
 .header__langs {
@@ -117,16 +117,13 @@
     display: flex;
     margin-left: -15px;
 
-    @media ($desktopSmall) {
-      margin-left: -10px;
-    }
-    @media ($tablet) {
+    @media (max-width: 1160px) {
       display: none;
     }
   }
   &.this--mobile {
     display: none;
-    @media ($tablet) {
+    @media (max-width: 1160px) {
       display: block;
       width: 74px;
       position: relative;
@@ -137,7 +134,7 @@
   }
 }
 .header__langs_head {
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -150,7 +147,7 @@
   }
 }
 .header__lang_arrow {
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     width: 20px;
     height: 17px;
     display: block;
@@ -158,7 +155,7 @@
   }
 }
 .header__langs_body {
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     background: #798EA2;
     border-radius: 4px;
     position: absolute;
@@ -191,10 +188,7 @@
   width: 35px;
   height: 25px;
 
-  @media ($desktopSmall) {
-    margin-left: 10px;
-  }
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     margin-left: 0;
   }
 
@@ -215,7 +209,7 @@
   }
   &.active {
     pointer-events: none;
-    @media ($tablet) {
+    @media (max-width: 1160px) {
       margin-right: 5px;
     }
     img {
@@ -226,7 +220,7 @@
 .header__burger {
   display: none;
 
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     display: block;
     width: 30px;
     height: 30px;
@@ -277,16 +271,9 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  @media ($tablet) {
-    //width: 100%;
-    //margin-top: 6px;
-  }
-  @media ($mobile) {
+  @media (max-width: 1160px) {
     width: 100%;
-    margin-top: 6px;
-  }
-  @media ($mobileMiddle) {
-    margin-top: 14px;
+    margin-top: 7px;
   }
 }
 .header__wa {
@@ -300,6 +287,10 @@
   background: url('../img/header/whatsapp.png') left top / 35px 35px no-repeat;
   transition: color 0.25s;
   white-space: nowrap;
+
+  @media (max-width: 1560px) {
+    font-size: 22px;
+  }
 
   &:hover {
     @media #{$mouse-device} {
@@ -348,7 +339,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -377,11 +368,13 @@
   display: flex;
   align-items: center;
   margin-left: -40px;
-
-  @media (max-width: 1360px) {
-    margin-left: -23px;
+  @media (max-width: 1560px) {
+    margin-left: -25px;
   }
-  @media ($tablet) {
+  @media ($desktopBig) {
+    margin-left: -19px;
+  }
+  @media (max-width: 1160px) {
     margin-top: 40px;
     display: block;
     margin-left: 0;
@@ -389,11 +382,13 @@
 
   li {
     margin-left: 40px;
-
-    @media (max-width: 1360px) {
-      margin-left: 23px;
+    @media (max-width: 1560px) {
+      margin-left: 25px;
     }
-    @media ($tablet) {
+    @media ($desktopBig) {
+      margin-left: 19px;
+    }
+    @media (max-width: 1160px) {
       margin-left: 0;
       text-align: center;
       margin-bottom: 30px;
@@ -408,11 +403,19 @@
   color: #FFFFFF;
   transition: color 0.25s;
 
+  @media (max-width: 1430px) {
+    font-size: 18px;
+  }
+
   @media (max-width: 1360px) {
     font-size: 16px;
   }
 
-  @media ($tablet) {
+  @media ($desktopSmall) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 1160px) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -427,14 +430,14 @@
   }
 }
 .header__book.btn {
-  padding: 12px 30px 10px;
+  padding: 12px 15px 10px;
   font-size: 18px;
 
   @media (max-width: 1360px) {
     font-size: 14px;
     padding: 10px 15px;
   }
-  @media ($tablet) {
+  @media (max-width: 1160px) {
     padding: 15px 30px;
     font-size: 16px;
   }

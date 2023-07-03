@@ -7,11 +7,14 @@
   padding: 22px 20px 18px;
   border-radius: 50px;
   transition: background 0.25s, color 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media ($tablet3) {
     font-size: 16px;
     line-height: 19px;
-    padding: 16px 15px 14px;
+    padding: 16px 8px 14px;
   }
 
   &.this--prime {

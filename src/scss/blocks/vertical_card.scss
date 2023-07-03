@@ -46,6 +46,12 @@
     line-height: 21px;
     max-width: none;
   }
+
+  &.this--long {
+    @media ($desktop) {
+      max-width: 330px;
+    }
+  }
 }
 .vertical_card__body {
   flex: 1 1 auto;
@@ -231,6 +237,6 @@
   }
   @media ($tablet3) {
     flex: 0 1 auto;
-    width: 280px;
+    width: 290px;
   }
 }

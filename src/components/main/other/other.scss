@@ -68,7 +68,7 @@
   padding: 40px;
 
   @media ($desktopBig) {
-    padding: 20px;
+    padding: 20px 10px;
   }
   @media ($tablet3) {
     padding: 20px 10px 15px;
@@ -84,17 +84,17 @@
   color: #FFFFFF;
 
   @media ($desktopBig) {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   @media ($tablet3) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
   }
 }
 .other__item_link {
   text-align: center;
-  margin: 0 32.5px;
+  margin: 0 20px;
 
   @media ($desktopBig) {
     margin: 0;

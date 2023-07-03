@@ -67,7 +67,7 @@
     line-height: 70px;
   }
   @media ($tablet3) {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 47px;
     margin-top: 5px;
   }
@@ -136,7 +136,7 @@
 .main_top__item_text {
   margin-top: 15px;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 29px;
   line-height: 38px;
   text-align: center;
   text-transform: uppercase;
@@ -175,15 +175,18 @@
 }
 .main_top__link {
   margin: 0 10px;
-  width: 360px;
+  width: 370px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media ($tablet3) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin: 0 0 10px;
-    width: 280px;
+    width: 290px;
   }
 }
 .main_top__langs_wr {

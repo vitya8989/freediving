@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- 180×180 -->
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Freediving school</title>
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/inputmask.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+    @@include('components/header/header_pl.html')
+    <main class="main">
+        @@include('components/main/main_top/main_top_pl.html')
+        @@include('components/main/about/about_pl.html')
+        @@include('components/main/beginners/beginners_pl.html')
+        @@include('components/main/courses/courses_pl.html')
+        @@include('components/main/training/training_pl.html')
+        @@include('components/main/other/other_pl.html')
+        @@include('components/main/why/why_pl.html')
+        @@include('components/main/instructors/instructors_pl.html')
+        @@include('components/main/choose/choose_pl.html')
+        @@include('components/main/reviews/reviews_pl.html')
+        @@include('components/main/how/how_pl.html')
+    </main>
+    @@include('components/footer/footer_pl.html')
+    @@include('components/callback/callback_pl.html')
+    @@include('components/video_popup/video_popup.html')
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

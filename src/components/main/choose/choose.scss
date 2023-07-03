@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 40px 15px;
 
   @media ($desktopBig) {
     padding: 20px;
@@ -83,7 +83,7 @@
 }
 .choose__item_title {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 38px;
   text-align: center;
   text-transform: uppercase;
